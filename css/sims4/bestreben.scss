@@ -1,0 +1,117 @@
+body {
+    background-color: var(--hellblau);
+}
+
+.bestreben-erklaerung {
+    padding: 8em 5em 0em 5em;
+    max-width: 1024px;
+    margin: auto;
+}
+
+.bestreben {
+    padding: 0em 5em 5em 5em;
+    width: 85%;
+    margin: auto;
+    max-width: 1024px;
+
+    .ueberschrift-dlc {
+        margin: 3em auto 1em auto;
+        img {
+            vertical-align: middle;
+            margin-right: 1em;
+            width: 40px;
+        }
+    }
+
+    td {
+        padding: 1em;
+        text-align: left;
+    }
+
+    th {
+        padding: 0.5em;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .basegame {
+            border-bottom: 3px solid #3aa1a67c;
+        
+    }
+
+    .ueberschrift {
+        background-color: var(--primary-color);
+        opacity: 0.5;
+        color: white;
+    }
+
+}
+
+
+td:nth-child(2) {
+    width: 140px;
+}
+
+td:nth-child(4) {
+    width: 140px;
+}
+
+td:nth-child(6) {
+    width: 250px;
+}
+
+.abschnitt {
+    overflow: auto;
+}
+
+.icon {
+    img {
+        width: 40px;
+    }
+    
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+    .bestreben {
+        padding: 0em 0.2em 5em 0.2em;
+        font-size: 0.8em;
+        td {
+            padding: 0.2em;
+            padding-top: .8em;
+        }
+
+        th {
+            padding: 0.5em;
+        }
+    }
+
+    
+    .icon {
+        img {
+            width: 25px;
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 736px) {
+    .bestreben-erklaerung {
+        padding: 6em 3.2em 0 3.2em;
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1em;
+        }
+        
+    }
+
+}

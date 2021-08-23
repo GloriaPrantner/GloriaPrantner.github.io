@@ -1,0 +1,231 @@
+body {
+    background-color: var(--hellblau);
+}
+
+.welt {
+    margin: auto;
+    padding-top: 4em;
+    background-color: var(--font-color);
+    border-bottom: solid 5px white;
+    height: 90vh;
+}
+
+.map {
+    text-align: center;
+    z-index: -2;
+    .marker {
+        cursor: pointer;
+
+        .marker-Hintergrund {
+            fill: var(--font-color);
+        }
+
+        &:hover {
+            .marker-Hintergrund {
+                opacity: 50%;
+            }
+        }
+    }
+
+    .weltubersicht_icon {
+        cursor: pointer;
+
+        &:hover {
+            .weltenuebersicht-Hintergrund {
+                opacity: 50%;
+            }
+        }
+    }
+
+    .weltenname {
+        cursor: pointer;
+
+        &:hover {
+            .weltenname-Hintergrund {
+                opacity: 50%;
+            }
+        }
+    }
+}
+
+.info-feld {
+    display: none;
+    z-index: 5;
+    position: absolute;
+    height: 90%;
+    width: 500px;
+    right: 0;
+    overflow: auto;
+    color: white;
+    background-color: var(--font-color);
+    padding-top: 4em;
+    top: 0;
+
+    button {
+        border: none;
+        text-decoration: none;
+        background-color: var(--font-color);
+        cursor: pointer;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2.5em;
+        margin-bottom: 0;
+        padding-top: 0;
+    }
+
+    h3 {
+        opacity: 50%;
+        text-align: center;
+        margin-top: -0.1em;
+        margin-bottom: 2em;
+    }
+
+    p {
+        font-size: 1.3em;
+    }
+
+    ul {
+        list-style-type: square;
+        margin-left: 2em;
+
+        li {
+            padding: 0.3em;
+            font-size: 1.3em;
+        }
+    }
+
+    .close {
+        float: right;
+        width: 10px;
+        padding-bottom: 1em;
+    }
+
+    .infos {
+        padding: 1.5em 4em;
+        background-color: var(--font-color);
+    }
+
+    .grundstuecke {
+        background-color: white;
+        color: var(--font-color);
+        padding: 1em 4em;
+
+        .grundstueck {
+            text-align: center;
+
+            img {
+                width: 100%;
+                max-width: 440px;
+                border: solid 4px var(--font-color);
+            }
+
+            p {
+                text-align: left;
+                font-size: 1.3em;
+            }
+
+            ul {
+                text-align: left;
+                margin-bottom: 1.2em;
+                font-size: 1.3em;
+            }
+        }
+    }
+
+    .welt-info-navbar {
+        display: flex;
+        background-color: var(--font-color);
+        text-align: center;
+        justify-content: space-around;
+        margin: auto;
+        padding-bottom: 10em;
+        padding: 0.5em;
+
+        button {
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+.info-feld-erscheinen {
+    display: gone;
+}
+
+.info-feld-links {
+    float: left;
+    left: 0;
+    right: auto;
+}
+
+.info-feld-rechts {
+    float: right;
+    right: 0;
+    left: auto;
+}
+
+
+@media only screen and (max-width: 1600px) {
+    .info-feld {
+        width: 100%;
+        text-align: center;
+
+        p {
+            font-size: 1em;
+        }
+
+        ul {
+            li {
+                font-size: 1em;
+            }
+        }
+
+        .grundstuecke {
+            text-align: center;
+            .grundstueck {
+                p {
+                    text-align: center;
+                }
+
+                ul {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1920px) {
+    .info-feld {
+        h1 {
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 0.9em;
+        }
+
+        ul {
+            li {
+                font-size: 0.9em;
+            }
+        }
+
+        .grundstuecke {
+            .grundstueck {
+                p {
+                    font-size: 0.9em;
+                }
+
+                ul {
+                    li {
+                        font-size: 0.9em;
+                    }
+                }
+            }
+        }
+    }
+}

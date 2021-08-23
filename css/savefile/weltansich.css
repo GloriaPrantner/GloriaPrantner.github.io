@@ -1,0 +1,205 @@
+body {
+  background-color: var(--hellblau);
+}
+
+.welt {
+  margin: auto;
+  padding-top: 4em;
+  background-color: var(--font-color);
+  border-bottom: solid 5px white;
+  height: 90vh;
+}
+
+.map {
+  text-align: center;
+  z-index: -2;
+}
+
+.map .marker {
+  cursor: pointer;
+}
+
+.map .marker .marker-Hintergrund {
+  fill: var(--font-color);
+}
+
+.map .marker:hover .marker-Hintergrund {
+  opacity: 50%;
+}
+
+.map .weltubersicht_icon {
+  cursor: pointer;
+}
+
+.map .weltubersicht_icon:hover .weltenuebersicht-Hintergrund {
+  opacity: 50%;
+}
+
+.map .weltenname {
+  cursor: pointer;
+}
+
+.map .weltenname:hover .weltenname-Hintergrund {
+  opacity: 50%;
+}
+
+.info-feld {
+  display: none;
+  z-index: 5;
+  position: absolute;
+  height: 90%;
+  width: 500px;
+  right: 0;
+  overflow: auto;
+  color: white;
+  background-color: var(--font-color);
+  padding-top: 4em;
+  top: 0;
+}
+
+.info-feld button {
+  border: none;
+  text-decoration: none;
+  background-color: var(--font-color);
+  cursor: pointer;
+}
+
+.info-feld h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 0;
+  padding-top: 0;
+}
+
+.info-feld h3 {
+  opacity: 50%;
+  text-align: center;
+  margin-top: -0.1em;
+  margin-bottom: 2em;
+}
+
+.info-feld p {
+  font-size: 1.3em;
+}
+
+.info-feld ul {
+  list-style-type: square;
+  margin-left: 2em;
+}
+
+.info-feld ul li {
+  padding: 0.3em;
+  font-size: 1.3em;
+}
+
+.info-feld .close {
+  float: right;
+  width: 10px;
+  padding-bottom: 1em;
+}
+
+.info-feld .infos {
+  padding: 1.5em 4em;
+  background-color: var(--font-color);
+}
+
+.info-feld .grundstuecke {
+  background-color: white;
+  color: var(--font-color);
+  padding: 1em 4em;
+}
+
+.info-feld .grundstuecke .grundstueck {
+  text-align: center;
+}
+
+.info-feld .grundstuecke .grundstueck img {
+  width: 100%;
+  max-width: 440px;
+  border: solid 4px var(--font-color);
+}
+
+.info-feld .grundstuecke .grundstueck p {
+  text-align: left;
+  font-size: 1.3em;
+}
+
+.info-feld .grundstuecke .grundstueck ul {
+  text-align: left;
+  margin-bottom: 1.2em;
+  font-size: 1.3em;
+}
+
+.info-feld .welt-info-navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--font-color);
+  text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: auto;
+  padding-bottom: 10em;
+  padding: 0.5em;
+}
+
+.info-feld .welt-info-navbar button:hover {
+  opacity: 0.5;
+}
+
+.info-feld-erscheinen {
+  display: gone;
+}
+
+.info-feld-links {
+  float: left;
+  left: 0;
+  right: auto;
+}
+
+.info-feld-rechts {
+  float: right;
+  right: 0;
+  left: auto;
+}
+
+@media only screen and (max-width: 1600px) {
+  .info-feld {
+    width: 100%;
+    text-align: center;
+  }
+  .info-feld p {
+    font-size: 1em;
+  }
+  .info-feld ul li {
+    font-size: 1em;
+  }
+  .info-feld .grundstuecke {
+    text-align: center;
+  }
+  .info-feld .grundstuecke .grundstueck p {
+    text-align: center;
+  }
+  .info-feld .grundstuecke .grundstueck ul {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1920px) {
+  .info-feld h1 {
+    font-size: 2em;
+  }
+  .info-feld p {
+    font-size: 0.9em;
+  }
+  .info-feld ul li {
+    font-size: 0.9em;
+  }
+  .info-feld .grundstuecke .grundstueck p {
+    font-size: 0.9em;
+  }
+  .info-feld .grundstuecke .grundstueck ul li {
+    font-size: 0.9em;
+  }
+}
+/*# sourceMappingURL=weltansich.css.map */
